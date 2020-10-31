@@ -2,7 +2,9 @@
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
+
 //Melissa Coskun 2019555301//
+
 
 //putting the name in the previous order//
 void undoname(char arr[], int size) {
@@ -324,14 +326,6 @@ void heapsortchar(char name[16], int n) {
 }
 
 
-
-
-
-
-
-
-
-
 int main() {
 
 	char name[] = " Melissa Coskun ";
@@ -393,6 +387,7 @@ int main() {
 	undoarray(&a, n1);
 
 	printf("\n\nOrginal Array:  ");  functionprint(a, n1);
+
 	printf("\nSelection Sort:    "); start = clock(); selectionsort(a, n1);
 	end = clock();
 	totaltime = (double)(end - start) / CLOCKS_PER_SEC;
@@ -445,8 +440,5 @@ int main() {
 	printf("\nSorted Name for heapsort:%s", name);
 	printf("\nExecution Time for HeapSort name:%f\n", totaltime);
 	undoname(name, charsize);
-
-	
-
 
 }
